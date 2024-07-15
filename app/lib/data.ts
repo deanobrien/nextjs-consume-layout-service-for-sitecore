@@ -2,7 +2,7 @@ async function getData( pathname: string) {
 	if(!pathname){
 		pathname = "/"
 	}
-	let fetchUrl='https://myportal-devint.northumbria.ac.uk/sitecore/api/layoutservice/get?site=website&lang=en&apiKey=xxx&path='+pathname
+	let fetchUrl='https://<insert-your-domain>/sitecore/api/layoutservice/get?site=website&lang=en&apiKey=xxx&path='+pathname
 	const res = await fetch(fetchUrl)
 	if (!res.ok) {
 		throw new Error('Failed to fetch data')
